@@ -1,0 +1,108 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+    /* ------banner------ */
+
+    .navbar {
+        height:11vh;
+    }
+
+    .navbar .nav-container a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .navbar .nav-container a:hover{
+        font-size: 1.3rem;
+    }
+
+    .nav-container .checkbox {
+        height: 28px;
+        width: 28px;
+    }
+
+    .nav-container .hamburger-lines {
+        height: 23px;
+        width: 28px;
+    }
+
+    .navbar .menu-items {
+        width: 35%;
+    }
+
+    .logo {
+        padding-left: 40%;
+    }
+
+    .logo img{
+        width: 33vh;
+    }
+
+
+    /* ------title------ */
+
+    #main-top{
+        padding: 12vh 8vh;
+    }
+
+    #title h1{
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    #title h3{
+        font-size: 18px;
+        word-spacing: 2px;
+        line-height: 1.4;
+    }
+
+    /* ------gallery------ */
+
+    #gallery-example h1{
+        font-size: 28px;
+    }
+
+    #gallery-image-container img{
+        width: 35vh;
+    }
+
+    /* ------find us------ */
+    #find-us-container img{
+        width: 10vh;
+    }
+
+    #find-us h1{
+        padding-top: 1vh;
+        font-size: 28px;
+    }
+
+    #find-us #line2{
+        font-size: 16px;
+    }
+
+    /* ------contact us------ */
+    #contact-us h1{
+        font-size: 28px;
+    }
+
+    #contact-us a{
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    #icons a i {
+        font-size: 25px; /* Adjust as needed */
+    }
+
+    #icons a i:hover {
+        font-size: 30px;
+    }
+
+
+    /* ------legal------ */
+    #legal{
+        margin-top: 5vh;
+    }
+
+    #legal a{
+        text-decoration: underline;
+    }
+}

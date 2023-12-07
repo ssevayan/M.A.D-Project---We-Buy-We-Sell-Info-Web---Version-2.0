@@ -1,0 +1,233 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+/* ------banner------ */
+
+.navbar {
+    width: 100%;
+    /* box-shadow: 0 1px 4px rgba(146, 161, 176, 0.507); */
+    background-color: #ff5f1f;
+    position: fixed;
+    height:10vh;
+}
+
+.navbar .overlay {
+    background-color: rgba(0,0,0,.64);
+    height: 100vh;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition-duration: .8s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.78,.13,.15,.86);
+    visibility: hidden;
+    width: 100vw;
+    will-change: opacity;
+    z-index: 0;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 10vh;
+} 
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index:6;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 3.5vh;
+    left: 3.5vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #000000;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+    padding-top: 120px;
+    background-color: #ffa60b;
+    height: 100vh;
+    width: 30%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    z-index: 10;
+}
+
+.navbar .menu-items li {
+    margin-bottom: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo {
+    position: absolute;
+    z-index: -1;
+    padding-left: 42%;
+    padding-top: 1vh;
+}
+
+.logo img{
+    width: 32vh;
+    height: auto;
+}
+
+.navbar input[type="checkbox"]:checked ~ .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.navbar input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.navbar input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.navbar input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+/* ------condition guideline------ */
+
+#Condition-Guideline{
+    position: relative;
+    z-index: -1;
+    top: 70px;
+    padding: 6vh;
+    font-family: 'Roboto Slab', serif;
+}
+
+#Condition-Guideline h1{
+    color:#ff4d00;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 3vh;
+}
+
+#manga, #figure, #plushy{
+    margin: auto 15vh;
+} 
+
+h3{
+    margin-bottom: 2vh;
+    font-size: 27px;
+    color:#ff9a00;
+}
+
+ol {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type:initial;
+    padding-left: 1.5vh;
+    margin-top: 1vh;
+}
+
+#figure h3{
+    margin-top: 5vh;
+}
+
+#plushy h3{
+    margin-top: 5vh;
+}
+
+#plushy-condition img{
+    width: 3vh;
+    height: auto;
+    padding: 0 4px;
+}
+
+/* legal */
+#legal{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 15vh;
+    margin-bottom: 0.5vh;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#legal a{
+    color:black;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#legal a:hover{
+    text-decoration: underline;
+}

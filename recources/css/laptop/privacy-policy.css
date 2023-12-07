@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1025px) and (max-width: 1600px) and (orientation:landscape) {
+
+    /* ------banner------ */
+
+    .navbar {
+        height:11vh;
+    }
+
+    .navbar .nav-container a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .navbar .nav-container a:hover{
+        font-size: 1.3rem;
+    }
+
+    .nav-container .checkbox {
+        height: 28px;
+        width: 28px;
+    }
+
+    .nav-container .hamburger-lines {
+        height: 23px;
+        width: 28px;
+    }
+
+    .navbar .menu-items {
+        width: 25%;
+    }
+
+    .logo {
+        padding-left: 41%;
+    }
+
+    .logo img{
+        width: 33vh;
+    }
+
+    /* ------content------ */
+    #content{
+        top: 60px;
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+
+    #content h1{
+        font-size: 38px;
+    }
+}

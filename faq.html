@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#ff5f1f"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recources\css\desktop\faq.css">
+    <link rel="stylesheet" href="recources\css\phone\faq.css">
+    <link rel="stylesheet" href="recources\css\tablet\faq.css">
+    <link rel="stylesheet" href="recources\css\tablet-ver\faq.css">
+    <link rel="stylesheet" href="recources\css\laptop\faq.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700&family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Add the following line to include your logo in the title bar -->
+    <link rel="icon" href="./recources/media/logo1.png" type="image/png">
+
+    <!-- The title tag sets the title of the page as displayed in the browser tab -->
+    <title>FAQ</title>
+
+</head>
+<body>
+    <!-- banner -->
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">                
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="overlay"></div>
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+                <div class="logo">
+                    <!-- <img id="short" src="./recources/media/logo.png" alt="WBA Logo"> -->
+                    <img id="long" src="./recources/media/logo2.png" alt="WeBuyAnime Logo">
+                </div>
+                <div class="menu-items">
+                    <li><a id="home" href="./index.html">Home</a></li>
+                    <li><a id="condition" href="./condition-guideline.html">Condition Guideline</a></li>
+                    <li><a id="gallery" href="./gallery.html">Gallery</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="faq">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+
+    <div id="faq-container">
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">What type of second-hand anime merchandise does your shop offer?</button>
+            <div class="panel">
+                <p>Our shop offers a diverse range of pre-owned anime-related products, including manga books, figures, plush toys, and more. Each item is carefully selected and inspected to ensure quality for our customers.</p>
+            </div>
+        </div>
+
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">Can I sell my anime items to your shop?</button>
+            <div class="panel">
+                <p>Absolutely! We welcome you to bring your second-hand anime merchandise to our store. Our staff will evaluate your items and offer a competitive price based on condition, rarity, and market demand.</p>
+            </div>
+        </div>
+
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">What conditions do the second-hand items come in?</button>
+            <div class="panel">
+                <p>Our used items vary in condition from 'nearly new' to 'gently used'. We have a <a href="./condition-guideline.html">Condition Guideline</a> for you to check if potentially we will accept your items.</p>
+            </div>
+        </div>
+
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">Do you offer refunds or exchanges for purchases made in the shop?</button>
+            <div class="panel">
+                <p>Return Policy: <br>You will need the receipts or any proof of purchase. <br>We offer 14 days for products return on original condition. <br>We offer 28 days exchange only for any on-sale items.</p>
+            </div>
+        </div>
+
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">How are the prices for second-hand products determined?</button>
+            <div class="panel">
+                <p>Prices are set based on the item's condition, rarity, current market trends, and overall demand. We aim to price our items fairly to provide value to both buyers and sellers.</p>
+            </div>
+        </div>
+
+        <!-- one more here -->
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">How will I be paid for the items I sell to your shop?</button>
+            <div class="panel">
+                <p>We provide immediate payment for items we purchase from you. We make cash payments or gift vouchers to ensure a straightforward and secure transaction.</p>
+            </div>
+        </div>
+
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">What are the shop’s opening hours?</button>
+            <div class="panel">
+                <p>Our opening hours from Monday to Saturday is 10:00am to 17:30pm, and Sunday we open from 11:00am to 16:00pm. These hours are subject to change during holiday periods or special events, so please check our 
+                    <a href="http://www.facebook.com/MyAnimeDream.shop" target="_blank">facebook page</a> or call ahead to confirm.</p>
+            </div>
+        </div>
+
+        <div class="single-q">
+            <button class="accordion" aria-expanded="false">How can I get updates on new arrivals?</button>
+            <div class="panel">
+                <p>For the latest updates on new stock, special events, and promotions, please follow us on our social media channels.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- legal -->
+    <div id="legal">
+        <a href="./terms-of-service.html"><p>Terms of Service</p></a>
+    </div>
+
+    <!-- Accordion Script -->
+    <script>
+        // Accordion functionality
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                var isExpanded = this.getAttribute("aria-expanded") === "true";
+                this.setAttribute("aria-expanded", !isExpanded);
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+            });
+        }
+    </script>
+</body>
+</html>

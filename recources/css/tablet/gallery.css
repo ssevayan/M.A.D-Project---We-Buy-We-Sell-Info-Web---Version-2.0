@@ -1,0 +1,68 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+    /* styles.css */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: #fbefe3;
+    }
+
+    /* ------banner------ */
+
+    .navbar {
+        height:11vh;
+    }
+
+    .navbar .nav-container a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .navbar .nav-container a:hover{
+        font-size: 1.3rem;
+    }
+
+    .nav-container .checkbox {
+        height: 28px;
+        width: 28px;
+    }
+
+    .nav-container .hamburger-lines {
+        height: 23px;
+        width: 28px;
+    }
+
+    .navbar .menu-items {
+        width: 35%;
+    }
+
+    .logo {
+        padding-left: 40%;
+    }
+
+    .logo img{
+        width: 33vh;
+    }
+
+    /* ------gallery------ */
+
+    #gallery-example{
+        top: 60px;
+    }
+
+    #gallery-example h1{
+        font-size: 28px;
+    }
+
+    #gallery-image-container img{
+        width: 35vh;
+    }
+
+    /* ------legal------ */
+    #legal a{
+        text-decoration: underline;
+    }
+}
+

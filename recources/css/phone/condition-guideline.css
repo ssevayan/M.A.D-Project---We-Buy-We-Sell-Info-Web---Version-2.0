@@ -1,0 +1,97 @@
+@media only screen and (max-width: 479px){
+    /* ------banner------ */
+    .navbar {
+        height: 6.5vh;
+    }
+
+    .navbar .nav-container a {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .navbar .nav-container a:hover{
+        font-size: 1.3rem;
+    }
+
+    .nav-container .checkbox {
+        height: 22px;
+        width: 22px;
+    }
+
+    .nav-container .hamburger-lines {
+        height: 18px;
+        width: 22px;
+        left: 2vh;
+        top: 2vh;
+    }
+
+    .nav-container .hamburger-lines .line {
+        height: 2.5px;
+    }
+
+    .navbar .menu-items {
+        width: 100%;
+        background-color: #ffa60bd9;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .logo {
+        padding-left: 32%;
+    }
+
+    .logo img{
+        width: 19vh;
+    }
+
+    /* ------condition guideline------ */
+
+    #Condition-Guideline{
+        top: 30px;
+    }
+
+    #Condition-Guideline h1{
+        font-size: 25px;
+    }
+
+    #manga, #figure, #plushy{
+        margin: 0;
+    } 
+
+    h3{
+        font-size: 17px;
+    }
+
+    ol {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    ul {
+        list-style-type:initial;
+        padding-left: 1.5vh;
+        margin-top: 1vh;
+    }
+
+    #figure h3{
+        margin-top: 5vh;
+    }
+
+    #plushy h3{
+        margin-top: 5vh;
+    }
+
+    #plushy-condition img{
+        width: 2vh;
+        padding-top: 1.5vh;
+    }
+
+    /* legal */
+    #legal{
+        margin-top: 5vh;
+    }
+
+    #legal a{
+        text-decoration: underline;
+    }
+}

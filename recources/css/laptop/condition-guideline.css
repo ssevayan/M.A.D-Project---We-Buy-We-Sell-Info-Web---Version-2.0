@@ -1,0 +1,81 @@
+@media only screen and (min-width: 1025px) and (max-width: 1600px) and (orientation:landscape) {
+
+    /* ------banner------ */
+
+    .navbar {
+        height:11vh;
+    }
+
+    .navbar .nav-container a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .navbar .nav-container a:hover{
+        font-size: 1.3rem;
+    }
+
+    .nav-container .checkbox {
+        height: 28px;
+        width: 28px;
+    }
+
+    .nav-container .hamburger-lines {
+        height: 23px;
+        width: 28px;
+    }
+
+    .navbar .menu-items {
+        width: 25%;
+    }
+
+    .logo {
+        padding-left: 41%;
+    }
+
+    .logo img{
+        width: 33vh;
+    }
+    
+    /* ------condition guideline------ */
+
+    #Condition-Guideline h1{
+        top: 60px;
+        color:#ff4d00;
+        font-size: 38px;
+    }
+
+    #manga, #figure, #plushy{
+        margin: auto 10vh;
+    } 
+
+    h3{
+        font-size: 20px;
+        color:#ff9a00;
+    }
+
+    ol {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    ul {
+        list-style-type:initial;
+        padding-left: 1.5vh;
+        margin-top: 1vh;
+    }
+
+    #figure h3{
+        margin-top: 5vh;
+    }
+
+    #plushy h3{
+        margin-top: 5vh;
+    }
+
+    #plushy-condition img{
+        width: 4vh;
+    }
+
+    /* legal */
+}

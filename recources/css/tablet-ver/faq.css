@@ -1,0 +1,82 @@
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+   /* ------banner------ */
+    .navbar {
+        height: 9vh;
+    }
+
+    .navbar .nav-container a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .navbar .nav-container a:hover{
+        font-size: 1.3rem;
+    }
+
+    .nav-container .checkbox {
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-container .hamburger-lines {
+        height: 20.5px;
+        width: 25px;
+        left: 2.5vh;
+        top: 3vh;
+    }
+
+    .navbar .menu-items {
+        width: 50%;
+    }
+
+    .logo {
+        padding-left: 10vh;
+    }
+
+    .logo img{
+        width: 25vh;
+    }
+
+    /* ------faq------ */
+    #faq{
+        top: 50px;
+    }
+
+    #faq h1{
+        font-size: 25px;
+    }
+
+    /* dropdown questions */
+    #faq-container{
+        margin-left: 8%;
+        margin-right: 8%;
+        padding-bottom: 5vh;
+        padding-top: 6vh;
+    }
+
+    .single-q{
+        margin-bottom: 1.5vh;
+    }
+
+    .accordion {
+        padding: 12px;
+        border-radius: 1.5vh;
+        font-size: 18px;
+    }
+    
+    .panel {
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 1.5vh;
+    }
+
+    /* legal */
+    #legal{
+        margin-top: 10vh;
+    }
+
+    #legal a{
+        text-decoration: underline;
+    }
+}
+
